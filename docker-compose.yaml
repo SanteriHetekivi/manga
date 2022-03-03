@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  manga_searcher:
+    image: "ghcr.io/santerihetekivi/manga:main"
+    build: .
+    volumes:
+      - "./data:/app/data"
+    env_file:
+      - .env
